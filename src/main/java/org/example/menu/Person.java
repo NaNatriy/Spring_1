@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
-//@Component
+@Component
 public class Person {
     private Transport transport;
 
@@ -13,7 +13,7 @@ public class Person {
     }
 
 //    @Qualifier("car")
-//    @Autowired
+    @Autowired
     public void setPerson(Transport transport) {
         this.transport = transport;
     }
